@@ -13,6 +13,7 @@ import s from './App.scss';
 import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
+// import harmony from 'harmonyhubjs-client';
 
 class App extends Component {
 
@@ -51,6 +52,32 @@ class App extends Component {
   }
 
   render() {
+  //   harmony('192.168.0.102').then((harmonyClient) => {
+  //     console.log(harmonyClient);
+  //     harmonyClient.isOff()
+  //       .then((off) => {
+  //         if(off) {
+  //           console.log('Currently off. Turning TV on.')
+  //           harmonyClient.getActivities()
+  //             .then((activities) => {
+  //               console.log(activities);
+  //               activities.some((activity) => {
+  //                 if(activity.label === 'Watch TV') {
+  //                   // var id = activity.id
+  //                   // harmonyClient.startActivity(id)
+  //                   // harmonyClient.end()
+  //                   return true
+  //                 }
+  //                 return false
+  //               })
+  //             })
+  //         } else {
+  //           console.log('Currently on. Turning TV off')
+  //           // harmonyClient.turnOff()
+  //           // harmonyClient.end()
+  //         }
+  //       })
+  // });
     return !this.props.error ? (
       <div>
         <Header />
